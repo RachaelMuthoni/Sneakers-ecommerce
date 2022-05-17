@@ -5,11 +5,150 @@
 }
 .container{
     width: 80vw;
-    height: 80vh;
+    height: 100vh;
     margin: 30px;
     margin-left: 100px;
 }
 
 .nav{
     display: flex;
+    padding: 10px 0;
+    margin-bottom:2%;
+    justify-content:space-between;
+
+}
+.nav-links{
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    flex-direction:row;
+}
+.nav img{
+    cursor:pointer;
+}
+.nav-links ul{
+    list-style:none;
+    display:flex;
+    margin-left:40px;
+
+}
+.nav-links li a{
+    text-decoration:none;
+    color:#69707D;
+    padding-right:30px;
+
+}
+.acc{
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    cursor: pointer;
+}
+.carticon{
+    margin-right:20px;
+}
+.profile{
+    display: flex;
+    width: 95%;     
+  }
+.profile2{
+    margin: 0;
+    padding-top:5px;
+}
+.add-minus{
+    display: flex;
+    padding: 5px;
+    background-color: hsl(25, 100%, 94%) ;
+}
+button{
+    width:100%;
+    background-color:  hsl(26, 100%, 55%);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border: 5px;
+    font-size: 20px;
+    color: white;
+    padding: 1rem 2.5rem;
+    margin-left: 10px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.detail1{
+    padding-top:50px;
+}
+.detail2{   
+    padding: 40px;
+    padding-bottom: 0px;
+    height: 500px;
+    width: 450px;
+}
+.add-to-cart{
+    display: flex;
+    margin-top: 30px;
+    align-items: center;
+    justify-content: space-between;
+}
+.add-minus{
+    width:30%;
+    background-color: hsl(223, 64%, 98%);
+    padding:15px;
+    justify-content: space-between;
+    display:flex;
+    border-radius:10px;
+    align-items:center;
+    -webkit-border-radius:10px;
+    -moz-border-radius:10px;
+    -ms-border-radius:10px;
+    -o-border-radius:10px;
+}
+ul {
+    overflow: hidden;
+  }
+li{
+    display: inline;
+}
+li a {
+    color: black;
+    text-align: center;
+    padding: 20px 35px;
+    text-decoration: none;
+  }
+  .active{
+      opacity:0.75;
+      background-color:hsl(0,0,0)
+  }
+  @media screen and (min-width:350px){
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .container{
+        width: 80vw;
+        height: 80vh;
+        margin: 30px;
+        margin-left: 100px;
+        display: none;
+    }
+    .detail{
+        display: flex;
+        flex-direction: column;
+    }
+    .profile{
+        display: flex;
+        flex-direction: column;
+        width: 45%;
+         
+      }
+    .nav{
+        display: flex;
+        flex-direction: column;
+    }
+    
+
 }
